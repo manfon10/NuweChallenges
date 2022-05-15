@@ -8,6 +8,22 @@ Estas instrucciones te permitirán obtener una copia del proyecto en funcionamie
 
 ### Instalación
 
-Clonacion del repositorio o aplicación.
+Clonación del repositorio o aplicación.
 
-<pre><code>`git clone https://github.com/manfon10/NuweChallenges.git`</code></pre>
+<pre><code>git clone https://github.com/manfon10/NuweChallenges.git</code></pre>
+
+### Instalación de dependencias
+
+Para poder ejecutar el proyecto en tu maquina local, se debe ejecutar la instalacion de las dependencias o modulos, para ello vamos a la ruta raiz y ejecutamos lo siguiente:
+
+<pre><code>npm install</code></pre>
+
+### Ejecución
+
+Para iniciar la aplicacion:
+
+<pre><code>npm start</code></pre>
+
+##Construido con 🛠️
+
+- [ReactJS](https://es.reactjs.org/)
