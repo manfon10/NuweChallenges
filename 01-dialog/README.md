@@ -24,6 +24,11 @@ Para iniciar la aplicacion:
 
 <pre><code>npm start</code></pre>
 
-##Construido con 🛠️
+## Construido con 🛠️
 
+- [HTML](https://developer.mozilla.org/es/docs/Web/HTML)
+- [CSS](https://developer.mozilla.org/es/docs/Web/CSS)
 - [ReactJS](https://es.reactjs.org/)
+- [FontAwesome](https://fontawesome.com/)
+
+⌨️ con ❤️ por [Manuel Fonseca](https://www.linkedin.com/in/manu-fonse/) 😊
