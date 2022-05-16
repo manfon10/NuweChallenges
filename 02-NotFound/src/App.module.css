@@ -1,0 +1,371 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;1,200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+body {
+    background-image: url('./assets//fondo.jpg');
+    overflow: hidden;
+}
+
+.info {
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+}
+
+.info > h2 {
+    font-size: 30px;
+}
+
+.container {
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.venus {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    bottom: 40px;
+    right: 100px;
+    animation: venus 10s linear infinite;
+}
+
+.cometTwo {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    animation-name: cometTwo;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    transform: rotate(400deg);
+    animation-iteration-count: infinite;
+}
+
+.astronaut {
+    width: 300px;
+    height: 300px;
+    animation: astronaut 20s linear infinite;
+}
+
+.numberOne {
+    font-size: 200px;
+    color: white;
+    text-shadow: 2px 8px 8px rgba(255, 255, 255, 0.445);
+    animation: numberOne 20s linear infinite;
+}
+
+.numberTwo {
+    font-size: 200px;
+    color: white;
+    text-shadow: 2px 8px 8px rgba(255, 255, 255, 0.445);
+    animation: numberTwo 20s linear infinite;
+}
+
+.buttonsOne, .buttonsTwo  {
+    padding: 8px;
+    margin-top: 5px;
+    margin-right: 10px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@keyframes astronaut {
+    0% {
+      transform: translateY(0px);
+    }
+
+    10%{
+      transform: translateY(30px) rotate(10deg);
+    }
+
+    20%{
+      transform: translateY(60px) rotate(20deg);
+    }
+
+     30%{
+      transform: translateY(90px) rotate(30deg);
+    }
+
+     40%{
+      transform: translateY(90px) rotate(20deg);
+    }
+
+    50% {
+      transform: translateY(90px) rotate(30deg);
+    }
+
+    60%{
+      transform: translateY(90px) rotate(30deg);
+    }
+
+    70%{
+      transform: translateY(90px) rotate(10deg);
+    }
+
+    80%{
+      transform: translateY(60px) rotate(20deg);
+    }
+
+    90%{
+      transform: translateY(30px) rotate(10deg);
+    }
+
+     100% {
+      transform: translateY(0px);
+    }
+}
+
+@keyframes numberOne {
+    0% {
+        transform: translateY(10px);
+    }
+
+    10%{
+        transform: translateY(30px) rotate(10deg);
+    }
+
+    20%{
+        transform: translateY(60px) rotate(22deg);
+    }
+
+    30%{
+        transform: translateY(90px) rotate(30deg);
+    }
+
+    40%{
+        transform: translateY(90px) rotate(10deg);
+    }
+
+    50% {
+        transform: translateY(90px) rotate(35deg);
+    }
+
+    60%{
+        transform: translateY(90px) rotate(30deg);
+    }
+
+    70%{
+        transform: translateY(90px) rotate(10deg);
+    }
+
+    80%{
+        transform: translateY(60px) rotate(25deg);
+    }
+
+    90%{
+        transform: translateY(30px) rotate(10deg);
+    }
+
+    100% {
+        transform: translateY(2px);
+    }
+}
+
+@keyframes numberTwo {
+    0% {
+        transform: translateY(15px);
+    }
+
+    10%{
+        transform: translateY(30px) rotate(30deg);
+    }
+
+    20%{
+        transform: translateY(60px) rotate(19deg);
+    }
+
+    30%{
+        transform: translateY(90px) rotate(10deg);
+    }
+
+    40%{
+        transform: translateY(90px) rotate(20deg);
+    }
+
+    50% {
+        transform: translateY(90px) rotate(35deg);
+    }
+
+    60%{
+        transform: translateY(90px) rotate(20deg);
+    }
+
+    70%{
+        transform: translateY(90px) rotate(10deg);
+    }
+
+    80%{
+        transform: translateY(60px) rotate(40deg);
+    }
+
+    90%{
+        transform: translateY(30px) rotate(10deg);
+    }
+
+    100% {
+        transform: translateY(4px);
+    }
+}
+
+@keyframes cometTwo {
+    0% {
+        right: -300px;
+        top: 0px;
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        right: 1000px;
+        top: 300px;
+        opacity: 0;
+    }
+}
+
+@keyframes venus {
+    0% {
+        transform: translateY(15px) rotate(0deg);
+    }
+
+    100% {
+        transform: translateY(0px) rotate(100deg);
+    }
+}
+
+@media only screen and ( min-width: 200px ) and (max-width: 767px) {
+    .info {
+        text-align: center;
+        color: white;
+        margin-top: 50px;
+    }
+    
+    .info > h2 {
+        font-size: 30px;
+    }
+    
+    .venus {
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        overflow: hidden;
+        bottom: 40px;
+        right: 100px;
+        animation: venus 10s linear infinite;
+    }
+    
+    .cometTwo {
+        width: 70px;
+        height: 70px;
+        position: absolute;
+        animation-name: cometTwo;
+        animation-timing-function: linear;
+        animation-duration: 2s;
+        transform: rotate(400deg);
+        animation-iteration-count: infinite;
+        overflow: hidden;
+    }
+    
+    .astronaut {
+        width: 150px;
+        height: 150px;
+        animation: astronaut 20s linear infinite;
+    }
+    
+    .numberOne {
+        font-size: 150px;
+        color: white;
+        text-shadow: 2px 8px 8px rgba(255, 255, 255, 0.445);
+        animation: numberOne 20s linear infinite;
+    }
+    
+    .numberTwo {
+        font-size: 150px;
+        color: white;
+        text-shadow: 2px 8px 8px rgba(255, 255, 255, 0.445);
+        animation: numberTwo 20s linear infinite;
+    }
+    
+    .buttonsOne, .buttonsTwo  {
+        padding: 8px;
+        margin-top: 5px;
+        margin-right: 10px;
+        border: 1px solid white;
+        background-color: transparent;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    @keyframes cometTwo {
+        0% {
+            right: -100px;
+            top: 0px;
+            opacity: 0;
+        }
+    
+        20% {
+            opacity: 1;
+        }
+    
+        40% {
+            opacity: 1;
+        }
+    
+        60% {
+            opacity: 1;
+        }
+    
+        80% {
+            opacity: 1;
+        }
+    
+        100% {
+            right: 200px;
+            top: 100px;
+            opacity: 0;
+            overflow: hidden;
+        }
+    }
+    
+    @keyframes venus {
+        0% {
+            transform: translateY(0px) rotate(0deg);
+        }
+    
+        100% {
+            transform: translateY(0px) rotate(100deg);
+        }
+    }
+}
