@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;1,200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    width: 800px;
+    white-space: nowrap;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.container::-webkit-scrollbar {
+    width: 10px;
+}
+.container::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.213); 
+}
+.container::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+
+.container_card {
+    border: 1px solid gray;
+    margin: 20px;
+    padding: 15px;
+    width: 350px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container_card:hover {
+    background-color: rgba(128, 128, 128, 0.091);
+}
+
+.container_card > p {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.category {
+    margin-right: 10px;
+    color: white;
+    padding: 0 10px;
+    border-radius: 5px;
+    background-color: rgba(3, 154, 3, 0.645);
+}
+
+@media only screen and ( min-width: 200px ) and (max-width: 900px) {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        box-shadow: none;
+    }
+
+    .container_card {
+        margin: 5px;
+    }
+
+}
