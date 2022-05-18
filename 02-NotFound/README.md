@@ -1,6 +1,6 @@
-# Dialog design system
+# 404 Not Found
 
-En este reto se propone desarrollar los diálogos o alertas de diferentes estados, Error, Success y Warning.
+En este reto se propone desarrollar una vista del tipico error 404 NOT FOUND.
 
 ## Comenzando 🚀
 
